@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Usuário</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Idade</th>
+          <th>País</th>
+        </tr>
+        <tr>
+          <td><%= nome %></td>
+          <td><%= sobrenome %></td>
+          <td><%= idade %></td>
+          <td><%= pais %></td>
+        </tr>
+      </table>    
+      <form> <!-- Esse form vazio serve para iciar a ação do método post, que terá como resposta o html 'infomacoes' -->
+        <input type="submit" value="Editar informação">
+      </form>
+</body>
+</html>
